@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Define document character set and viewport settings -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Include external stylesheets for icon fonts and additional styles -->
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="styles.css" />
+
+  <!-- Set the title of the webpage -->
+  <title>Day 32 - Banking/Fintech Landing Page</title>
+</head>
+
+<body>
+  <!-- Navigation section -->
+  <nav>
+    <!-- Logo and navigation links -->
+    <div class="nav__logo"><a href="#">BankForAll</a></div>
+    <ul class="nav__links" id="nav-links">
+      <li class="link"><a href="#home">Home</a></li>
+      <li class="link"><a href="#about">About</a></li>
+      <li class="link"><a href="#portfolio">Features</a></li>
+      <li class="link"><a href="#client">Client</a></li>
+      <li class="link"><a href="#news">News</a></li>
+      <li class="link"><a href="#contact">Contact</a></li>
+    </ul>
+    <!-- Menu button for mobile view -->
+    <div class="nav__menu__btn" id="menu-btn">
+      <span><i class="ri-menu-3-line"></i></span>
+    </div>
+  </nav>
+
+  <!-- Header section -->
+  <header class="section__container header__container" id="home">
+    <!-- Header content with welcome message and explore button -->
+    <div class="header__content">
+      <h1>Welcome to BankForAll - Your Digital Banking Partner</h1>
+      <div class="header__content__details">
+        <p>
+          At BankForAll, we are passionate about crafting digital experiences
+          that captivate, inspire, and drive results. As a digital banking
+          partner, we specialize in translating your financial needs into
+          innovative online solutions.
+        </p>
+        <button class="btn" style="font-family: 'Quicksand', sans-serif;">Explore</button>
+      </div>
+    </div>
+    <!-- Header images -->
+    <div class="header__image">
+      <img src="assets/header--1.png" alt="header" />
+      <img src="assets/header--2.png" alt="header" />
+    </div>
+  </header>
+
+  <!-- About section -->
+  <section class="section__container about__container" id="about">
+    <!-- About header with image and content -->
+    <div class="about__header">
+      <div class="about__image">
+        <img src="assets/about.jpg" alt="about" />
+      </div>
+      <div class="about__content">
+        <p class="section__subheader">About Us</p>
+        <h2 class="section__header">Your Trusted Banking Partner in Abuja</h2>
+        <p class="paragraph">
+          Our team of financial experts, tech-savvy developers, and digital
+          strategists come together to deliver comprehensive banking solutions
+          that span digital banking, mobile app services, financial education,
+          and more. We thrive on pushing the boundaries of financial technology
+          to help you achieve your financial goals.
+        </p>
+        <button class="btn" style="font-family: 'Quicksand', sans-serif;">Learn More</button>
+      </div>
+    </div>
+    <!-- About grid with cards highlighting key features -->
+    <div class="about__grid">
+      <!-- Card 1 - Digital Banking -->
+      <div class="about__card">
+        <span><i class="ri-pen-nib-line"></i></span>
+        <div>
+          <h4>Digital Banking</h4>
+          <p>
+            Our team is committed to delivering secure and convenient digital
+            banking experiences tailored to your financial needs.
+          </p>
+        </div>
+      </div>
+      <!-- Card 2 - Innovative Solutions -->
+      <div class="about__card">
+        <span><i class="ri-layout-masonry-line"></i></span>
+        <div>
+          <h4>Innovative Solutions</h4>
+          <p>
+            We stay at the forefront of financial technology, ensuring that
+            your banking experience is not only secure but also innovative.
+          </p>
+        </div>
+      </div>
+      <!-- Card 3 - Financial Education -->
+      <div class="about__card">
+        <span><i class="ri-checkbox-line"></i></span>
+        <div>
+          <h4>Financial Education</h4>
+          <p>
+            We understand that financial knowledge is key. Our focus is not
+            just on banking; it's also on empowering you with financial
+            education.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Portfolio section -->
+  <section class="section__container portfolio__container" id="portfolio">
+    <!-- Portfolio header with new features and app introduction -->
+    <div class="portfolio__header">
+      <div>
+        <p class="section__subheader">New Features</p>
+        <h2 class="section__header">Introducing Our New Banking App</h2>
+      </div>
+      <div>
+        <p class="paragraph">
+          Explore the latest features and functionalities of our cutting-edge banking app. Each image below
+          offers insights into the development process, challenges overcome, and the enhanced
+          banking experience for our users.
+        </p>
+        <a href="#" class="btn__link">
+          Discover More <span><i class="ri-arrow-right-line"></i></span>
+        </a>
+      </div>
+    </div>
+    <!-- Portfolio grid with cards displaying app features -->
+    <div class="portfolio__grid">
+      <div class="portfolio__card">
+        <img src="assets/app-1.png" alt="app feature" />
+      </div>
+      <div class="portfolio__card">
+        <img src="assets/app-2.png" alt="app feature" />
+      </div>
+      <div class="portfolio__card">
+        <img src="assets/app-3.png" alt="app feature" />
+      </div>
+    </div>
+  </section>
+
+  <!-- Client/Testimony section -->
+  <section class="section__container client__container" id="client">
+    <!-- Testimony header and slider container -->
+    <div class="client__header">
+      <div>
+        <p class="section__subheader">Testimony</p>
+        <h2 class="section__header">What Our Client Says</h2>
+      </div>
+      <div>
+        <a href="#" class="btn__link">
+          View All <span><i class="ri-arrow-right-line"></i></span>
+        </a>
+      </div>
+    </div>
+    <!-- Slider container for client testimonials -->
+    <div class="swiper">
+      <!-- Wrapper for individual client testimonials -->
+      <div class="swiper-wrapper">
+        <!-- Testimonial 1 -->
+        <div class="swiper-slide">
+          <div class="client__card">
+            <img src="assets/profile-pic-1.jpg" alt="client" />
+            <div>
+              <h4>Chijioke Nwabueze</h4>
+              <div class="client__ratings">
+                <span><i class="ri-star-fill"></i></span>
+                <span><i class="ri-star-fill"></i></span>
+                <span><i class="ri-star-fill"></i></span>
+                <span><i class="ri-star-fill"></i></span>
+                <span><i class="ri-star-line"></i></span>
+              </div>
+              <p>
+                I was hesitant about the value of digital marketing for my
+                local business, but BankForAll proved me wrong. They boosted
+                our local search visibility, and now we're attracting more
+                customers than ever.
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- Testimonial 2 -->
+        <div class="swiper-slide">
+          <div class="client__card">
+            <img src="assets/profile-pic-2.jpg" alt="client" />
+            <div>
+              <h4>Aisha Bello</h4>
+              <div class="client__ratings">
+                <span><i class="ri-star-fill"></i></span>
+                <span><i class="ri-star-fill"></i></span>
+                <span><i class="ri-star-fill"></i></span>
+                <span><i class="ri-star-half-fill"></i></span>
+                <span><i class="ri-star-line"></i></span>
+              </div>
+              <p>
+                Working with BankForAll was a game-changer for our business.
+                Their team designed a stunning website and devised a strategic
+                digital marketing plan that significantly increased our online
+                presence.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!--Testimonial 3-->
+        <div class="swiper-slide">
+          <div class="client__card">
+            <img src="assets/profile-pic-3.jpg" alt="client" />
+            <div>
+              <h4>Oluwaseun Adeyemi</h4>
+              <div class="client__ratings">
+                <span><i class="ri-star-fill"></i></span>
+                <span><i class="ri-star-fill"></i></span>
+                <span><i class="ri-star-fill"></i></span>
+                <span><i class="ri-star-fill"></i></span>
+                <span><i class="ri-star-fill"></i></span>
+              </div>
+              <p>
+                As a startup founder, I needed a digital partner I could trust
+                to bring my vision to life. BankForAll did just that. They
+                built a user-friendly app that perfectly aligned with our
+                brand.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!--Testimonial 4-->
+        <div class="swiper-slide">
+          <div class="client__card">
+            <img src="assets/profile-pic-4.jpg" alt="client" />
+            <div>
+              <h4>Ngozi Okonkwo</h4>
+              <div class="client__ratings">
+                <span><i class="ri-star-fill"></i></span>
+                <span><i class="ri-star-fill"></i></span>
+                <span><i class="ri-star-fill"></i></span>
+                <span><i class="ri-star-fill"></i></span>
+                <span><i class="ri-star-half-fill"></i></span>
+              </div>
+              <p>
+                BankForAll went above and beyond in helping our nonprofit
+                organization establish a strong online presence. They designed
+                a beautiful website and helped us set up effective online
+                fundraising campaigns.
+              </p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- News section -->
+  <section class="section__container news__container" id="news">
+    <!-- News header and grid of news cards -->
+    <p class="section__subheader">News</p>
+    <h2 class="section__header">Read Our News</h2>
+    <div class="news__grid">
+      <!-- News Card 1 -->
+      <div class="news__card">
+        <img src="assets/news-1.jpg" alt="news" />
+        <div>
+          <h4>The Art of Banking</h4>
+          <p>
+            Explore the principles and techniques behind creating
+            user-centered web designs that prioritize the needs and
+            preferences of your target audience.
+          </p>
+          <a href="#" class="btn__link">
+            View All <span><i class="ri-arrow-right-line"></i></span>
+          </a>
+        </div>
+      </div>
+      <!-- News Card 2 -->
+      <div class="news__card">
+        <img src="assets/news-2.jpg" alt="news" />
+        <div>
+          <h4>Mastering the Mobile-First Approach</h4>
+          <p>
+            Discover why mobile optimization is crucial, explore best
+            practices, and understand how to create responsive designs.
+          </p>
+          <a href="#" class="btn__link">
+            View All <span><i class="ri-arrow-right-line"></i></span>
+          </a>
+        </div>
+      </div>
+
+      <!--News card 3-->
+      <div class="news__card">
+        <img src="assets/news-3.jpg" alt="news" />
+        <div>
+          <h4>Digital Marketing Demystified</h4>
+          <p>
+            Uncover the secrets of effective digital marketing strategies that
+            can elevate your online presence.
+          </p>
+          <a href="#" class="btn__link">
+            View All <span><i class="ri-arrow-right-line"></i></span>
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Contact section -->
+  <section class="contact" id="contact">
+    <!-- Contact header and button to create an account -->
+    <div class="section__container contact__container">
+      <h2 class="section__header">
+        Create an Account with us Today!
+      </h2>
+      <div class="contact__btn">
+        <button class="btn" style="font-family: 'Quicksand', sans-serif;">Get In Touch</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer section -->
+  <footer class="section__container footer__container">
+    <!-- Footer columns with links and information -->
+    <div class="footer__col">
+      <h5><a href="#">BankForAll</a></h5>
+    </div>
+    <div class="footer__col">
+      <h4>Our Contact</h4>
+      <p>402, St. Street, Abuja F.C.T, Nigeria</p>
+      <p>+2348076543210</p>
+      <p>bankforall@gmail.com</p>
+    </div>
+    <div class="footer__col">
+      <h4>About Us</h4>
+      <p>
+        At BankForAll, we are passionate about crafting digital experiences that captivate, inspire, and drive results.
+      </p>
+    </div>
+    <div class="footer__col">
+      <!-- Subscription form and social media links -->
+      <h4>Subscribe</h4>
+      <form action="/">
+        <input type="text" placeholder="Your Email" />
+        <button><i class="ri-send-plane-2-fill"></i></button>
+      </form>
+      <div class="footer__socials">
+        <h4>Follow Us</h4>
+        <div>
+          <a href="#"><i class="ri-facebook-box-fill"></i></a>
+          <a href="#"><i class="ri-linkedin-box-fill"></i></a>
+          <a href="#"><i class="ri-instagram-line"></i></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- Footer bar with copyright information -->
+  <div class="footer__bar">
+    Copyright © 2024. Day 32/100- All rights reserved.
+  </div>
+
+  <!-- JavaScript libraries for Swiper and ScrollReveal, and main.js script -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+  <script src="https://unpkg.com/scrollreveal"></script>
+  <script src="main.js"></script>
+</body>
+
+</html>
